@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Index.html" class="dropbtn">Discover</a>
+                <div class="dropdown-content">
+                    <a href="Seattle.html">Seattle</a>
+                    <a href="Olympia.html">Olympia</a>
+                    <a href="Leavenworth.html">Leavenworth</a>
+                </div>
+            </li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Citation.html">Additional Information</a></li>
+        </ul>
+    </div>
+<section>
+    <h1>Contact</h1>
+    <p>If you have any comments, questions, or suggestions, please feel free to reach out to us using the form below. Thank you.</p>
+    <form id="contactForm">
+        <p>First Name</p>
+        <input type="text" id="firstName" placeholder="Enter your first name">
+        
+        <p>Last Name</p>
+        <input type="text" id="lastName" placeholder="Enter your last name">
+        
+        <p>Email Address</p>
+        <input type="email" id="email" placeholder="Enter your email">
+        
+        <p>Confirm Email Address</p>
+        <input type="email" id="confirmEmail" placeholder="Enter your email">
+        
+        <p>Enter question here</p>
+        <textarea id="textbox" placeholder="Write your questions or comments here"></textarea>
+
+        <p id="errorMessage" style="color: red;"></p>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+    <aside class="asideinfo">
+        Thank you for visiting the website
+    </aside>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const confirmEmail = document.getElementById('confirmEmail').value;
+            const errorMessage = document.getElementById('errorMessage');
+            
+            if (email !== confirmEmail) {
+                errorMessage.textContent = 'Email addresses do not match.';
+            } else {
+                errorMessage.textContent = '';
+                alert('Emails match. Form can be submitted.');
+                 }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+.leavenworthbackground {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-image: url('leavenworth.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; 
+    overflow-x: hidden; 
+}
+.seattlebackground {
+    margin-top: auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-image: url('seattle_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; 
+    overflow-x: hidden; 
+}
+.washingtonbackground {
+    margin-top: auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; 
+    overflow-x: hidden; 
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 0;
+    position: relative; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    position: relative;
+}
+
+.navbar ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.navbar ul li a::after, .dropdown:hover .dropbtn::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li a:hover::after, .dropdown:hover .dropbtn::after {
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2000; 
+    top: 100%; 
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: auto;
+    position: relative;
+    z-index: 1; 
+}
+
+.contentleavenworth {
+    margin-top: auto;
+    flex: 2;
+    padding: 20px;
+    color:rgb(0, 0, 0)
+}
+
+.contentleavenworth h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.contentleavenworth p {
+    margin: 20px 0;
+    font-weight: 100;
+    line-height: 25px;
+    color:rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.7)
+}
+
+.aside {
+    flex: 1;
+    padding: 20px;
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 8px;
+    float:right;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.contentwashington {
+    margin-top: auto;
+    flex: 2;
+    padding: 20px;
+    color:rgb(0, 0, 0)
+}
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content-table th, .content-table td {
+    border: 1px solid #d41111;
+    padding: 8px;
+}
+
+.content-table th {
+    background-color: #d41111;
+    text-align: left;
+}
+
+.content-table tr:nth-child(even) {
+    background-color: #d41111;
+}
+
+.content-table tr:hover {
+    background-color: #cabcbc;
+}
+.titlewashington {
+color:#01eb20
+}
+.titleleavenworth {
+    color:#d41111
+}
+
+#textbox{
+    height:200px;
+    width: 500px;
+    font-size:14pt;
+}
+.olympiabackground {
+    margin-top: auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-image: url('Olympia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; 
+    overflow-x: hidden; 
+}
+.asideadditional {
+    background: rgba(0, 0, 0, 0.288);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 1000px;
+    color: rgb(0, 0, 0);
+}
+.asidediscover {
+    flex: 1;
+    padding: 20px;
+    margin-top: 108px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 8px;
+    float:right;
+    
+}
+.asideinfo {
+    flex: 1;
+    padding: 20px;
+    margin-top: 108px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 8px;
+    
+}
